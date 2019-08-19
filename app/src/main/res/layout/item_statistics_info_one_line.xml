@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#979797">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_statistics_machine_num"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="机号"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="毛边"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="双纬"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="错纬"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="纬缩"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="百脚"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="希弄"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_7"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="经缩"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_8"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="破洞"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_9"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="破边"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="油渍"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_11"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="密路"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_12"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="毛边"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_13"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="断经"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_14"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="双经"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_15"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="穿错"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_16"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="批写号错"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_17"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:background="@color/gray"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:text="次布数量"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
+

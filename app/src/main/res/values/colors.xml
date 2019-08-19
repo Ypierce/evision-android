@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- colors used to override the Material Drawer color-->
+
+
+    <color name="theme_color">#6EB92D</color>
+    <color name="theme_red">#FC574E</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_ffc760">#FFC760</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_444553">#444553</color>
+    <color name="color_4ed966_transparent_70">#4D4ED966</color>
+    <color name="color_4ed966">#4ED966</color>
+    <color name="color_ff3750">#FF3750</color>
+</resources>

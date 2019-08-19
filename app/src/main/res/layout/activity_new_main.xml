@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F2F"
+    android:orientation="vertical"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp">
+
+    <include layout="@layout/main_tab" />
+
+    <include layout="@layout/main_tab_content" />
+</LinearLayout>

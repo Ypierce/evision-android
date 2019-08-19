@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_cloth_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/main_tab_left_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_varieties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="品种"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/shape_background_edit_gray">
+
+                        <EditText
+                            android:id="@+id/et_varieties"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="请输入品种"
+                            android:imeOptions="actionSearch"
+                            android:maxLines="1"
+                            android:minWidth="175dp"
+                            android:minHeight="40dp"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="经纱—纬纱"
+                                android:textColor="@color/white"
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/et_warp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/shape_background_edit_gray"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请输入经纱"
+                                android:imeOptions="actionSearch"
+                                android:maxLength="32"
+                                android:maxLines="1"
+                                android:minWidth="84dp"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/gray"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp" />
+
+                            <View
+                                android:layout_width="17dp"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@color/gray" />
+
+                            <EditText
+                                android:id="@+id/et_weft"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_background_edit_gray"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请输入纬纱"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:minWidth="84dp"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/gray"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="机台号"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/shape_background_edit_gray">
+
+                                <EditText
+                                    android:id="@+id/et_machine_num"
+                                    android:layout_width="175dp"
+                                    android:layout_height="40dp"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="请输入机台号"
+                                    android:imeOptions="actionDone"
+                                    android:maxLines="1"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/gray"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="15sp" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="日期"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_background_edit_gray"
+                                    android:minWidth="60dp"
+                                    android:padding="10dp"
+                                    android:text="2019"
+                                    android:textColor="@color/gray"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:layout_width="17dp"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:background="@color/gray" />
+
+                                <TextView
+                                    android:id="@+id/tv_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/shape_background_edit_gray"
+                                    android:minWidth="60dp"
+                                    android:padding="10dp"
+                                    android:text="12"
+                                    android:textColor="@color/gray"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:layout_width="17dp"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:background="@color/gray" />
+
+                                <TextView
+                                    android:id="@+id/tv_day"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/shape_background_edit_gray"
+                                    android:minWidth="60dp"
+                                    android:padding="10dp"
+                                    android:text="12"
+                                    android:textColor="@color/gray"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="班次"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_shift_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/shape_background_edit_gray"
+                                android:drawableEnd="@drawable/ic_item_pull_down_arrow"
+                                android:gravity="center_vertical"
+                                android:hint="请选择班次"
+                                android:maxLength="32"
+                                android:minWidth="175dp"
+                                android:padding="10dp"
+                                android:textColor="@color/gray"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="厚度"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_thickness_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/shape_background_edit_gray"
+                                android:drawableEnd="@drawable/ic_item_pull_down_arrow"
+                                android:gravity="center_vertical"
+                                android:hint="请选择厚度"
+                                android:maxLength="32"
+                                android:minWidth="175dp"
+                                android:padding="10dp"
+                                android:textColor="@color/gray"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_varieties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="品种"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_varieties"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/shape_background_edit_gray_transparent"
+                            android:minWidth="175dp"
+                            android:minHeight="40dp"
+                            android:padding="10dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_un_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="品种"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_varieties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="经纱—纬纱"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_warp_and_weft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="机台号"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_machine_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="日期"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="班次"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_shift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_thickness_un_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="厚度"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_thickness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_add_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:background="#4ED966"
+            android:paddingLeft="22dp"
+            android:paddingTop="8dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="8dp"
+            android:text="新增布匹"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_sure_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:background="#4ED966"
+            android:paddingLeft="22dp"
+            android:paddingTop="8dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="8dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

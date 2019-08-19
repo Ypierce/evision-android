@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="color_787878">#787878</color>
+    <color name="color_72727A">#72727A</color>
+    <color name="color_242536">#242536</color>
+    <color name="color_454650">#454650</color>
+
+    <color name="default_shadow_color">#88757575</color>
+    <!-- special color -->
+
+</resources>

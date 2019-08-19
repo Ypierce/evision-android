@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_tab_left"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="3dp"
+    android:layout_weight="35"
+    android:orientation="vertical"
+    tools:showIn="@layout/main_bottom_tab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cloth_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="布匹信息"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_defect_info_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="疵点信息"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/main_tab_left_content" />
+</LinearLayout>

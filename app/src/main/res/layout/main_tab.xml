@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_new_main">
+
+    <TextView
+        android:id="@+id/tv_workbench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sl_tab_control_background_green"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="20dp"
+        android:text="验布工作台"
+        android:textColor="@drawable/sl_tab_control_textcolor_white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/sl_tab_control_background_green"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="20dp"
+        android:text="验布统计"
+        android:textColor="@drawable/sl_tab_control_textcolor_white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_item_nav_logo_text" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="yyyy-MM-dd HH:mm:ss"
+            android:format24Hour="yyyy-MM-dd HH:mm:ss"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_item_nav_close" />
+    </LinearLayout>
+</LinearLayout>

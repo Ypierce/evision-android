@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="65"
+    android:orientation="vertical"
+    tools:showIn="@layout/main_bottom_tab">
+
+    <LinearLayout
+        android:id="@+id/ll_tab_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ai_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="A I 分析"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_add_blemish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="新增疵点"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_debug_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="视频(Debug)"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_debug_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="码表(Debug)"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_udp_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="通信设置"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_defect_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="疵点信息"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_edit_defect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/sl_tab_control_background_green"
+            android:paddingLeft="9dp"
+            android:paddingTop="8dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="8dp"
+            android:text="编辑疵点"
+            android:textColor="@drawable/sl_tab_control_textcolor_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_app_main_chart">
+
+        <FrameLayout
+            android:id="@+id/fl_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hs.common.view.CustomerVideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_empty_data_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:drawableTop="@drawable/ic_item_no_count"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_debug_clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/rl_debug_clock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/color_979797"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_debug_clock_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="15dp"
+                android:background="@color/color_4ed966"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="清除"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_debug_clock_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/udp_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mcu_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MCU_UDP_IP"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/shape_background_edit_gray">
+
+                    <EditText
+                        android:id="@+id/et_udpIp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请输入IP"
+                        android:imeOptions="actionSearch"
+                        android:maxLines="1"
+                        android:minWidth="175dp"
+                        android:minHeight="40dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mcu_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MCU_UDP_PORT"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/shape_background_edit_gray">
+
+                    <EditText
+                        android:id="@+id/et_udpPort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请输入port"
+                        android:imeOptions="actionSearch"
+                        android:maxLines="1"
+                        android:minWidth="175dp"
+                        android:minHeight="40dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|right">
+
+                <TextView
+                    android:id="@+id/udp_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4ED966"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/udp_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#4ED966"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_debug_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/rl_debug_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/fl_debug_video"
+                android:layout_alignTop="@+id/fl_debug_video"
+                android:divider="@color/color_979797"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_debug_video_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:background="@color/color_4ed966"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="清除"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_debug_video_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_defect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_edit_defect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.hs.common.view.ListViewForScrollView
+                            android:id="@+id/lv_blemish_type_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cacheColorHint="#00000000"
+                            android:divider="#787878"
+                            android:dividerHeight="0dp"
+                            android:fadeScrollbars="true"
+                            android:overScrollMode="never"
+                            android:requiresFadingEdge="none"
+                            android:scrollbars="none" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_remark_detailed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:text="已选择疵点"
+                                    android:textColor="@color/gray"
+                                    android:textSize="18sp" />
+
+                                <com.hs.common.view.ListViewForScrollView
+                                    android:id="@+id/lv_remark_des"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:cacheColorHint="#00000000"
+                                    android:divider="#242536"
+                                    android:dividerHeight="20dp"
+                                    android:fadeScrollbars="true"
+                                    android:overScrollMode="never"
+                                    android:requiresFadingEdge="none"
+                                    android:scrollbars="none" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_remark_simple"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="备注："
+                                    android:textColor="#66ffffff"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_remark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="点击输入备注"
+                                    android:imeOptions="actionDone"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#66ffffff"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_defect_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="30dp">
+
+                            <TextView
+                                android:id="@+id/tv_defect_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingStart="36dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="25dp"
+                                android:paddingBottom="15dp"
+                                android:text="毛边"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="15dp"
+                                android:text="瑕点数据"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_defect_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <com.hs.common.view.ListViewForScrollView
+                                android:id="@+id/lv_defect_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:cacheColorHint="#00000000"
+                                android:divider="#787878"
+                                android:dividerHeight="0dp"
+                                android:fadeScrollbars="true"
+                                android:overScrollMode="never"
+                                android:requiresFadingEdge="none"
+                                android:scrollbars="none" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="15dp"
+                                android:text="备注"
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remark_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="25dp"
+                            android:src="@drawable/ic_item_close" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/color_787878" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置："
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4ED966"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="#4ED966"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

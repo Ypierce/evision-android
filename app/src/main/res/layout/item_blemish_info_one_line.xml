@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_blemish_info_one_line"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#979797"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_blemish_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:text="003"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_blemish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="脏迹"
+        android:maxLength="2"
+        android:ellipsize="end"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_blemish_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="32"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_blemish_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_blemish_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="7dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_item_edit" />
+</LinearLayout>
+

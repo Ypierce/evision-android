@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_defect_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_app_main_chart"
+    android:visibility="gone"
+    tools:showIn="@layout/main_tab_left_content">
+
+    <LinearLayout
+        android:id="@+id/ll_defect_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFC760"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:text="序号"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="疵点名称"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="位置"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="分数"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="操作"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_blemish_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:fadeScrollbars="true"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_empty_data_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableTop="@drawable/ic_item_no_count"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+</RelativeLayout>

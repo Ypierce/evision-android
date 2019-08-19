@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="cpv_default_anim_autostart">false</bool>
+    <bool name="cpv_default_is_indeterminate">false</bool>
+    <color name="background_tab_pressed">#0033B5E5</color>
+    <color name="black">#000000</color>
+    <color name="color_242536">#242536</color>
+    <color name="color_454650">#454650</color>
+    <color name="color_72727A">#72727A</color>
+    <color name="color_787878">#787878</color>
+    <color name="cpv_default_color">#2196F3</color>
+    <color name="default_shadow_color">#88757575</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="ActionSheet">
+        <attr format="color|reference" name="actionSheetBackground"/>
+        <attr format="color|reference" name="cancelButtonBackground"/>
+        <attr format="color|reference" name="otherButtonTopBackground"/>
+        <attr format="color|reference" name="otherButtonMiddleBackground"/>
+        <attr format="color|reference" name="otherButtonBottomBackground"/>
+        <attr format="color|reference" name="otherButtonSingleBackground"/>
+        <attr format="color|reference" name="cancelButtonTextColor"/>
+        <attr format="color|reference" name="otherButtonTextColor"/>
+        <attr format="dimension|reference" name="actionSheetPadding"/>
+        <attr format="dimension|reference" name="otherButtonSpacing"/>
+        <attr format="dimension|reference" name="cancelButtonMarginTop"/>
+        <attr format="dimension|reference" name="actionSheetTextSize"/>
+    </declare-styleable>
+    <declare-styleable name="ActionSheets">
+        <attr format="reference" name="actionSheetStyle"/>
+    </declare-styleable>
+    <declare-styleable name="AutofitTextView">
+
+        <!-- 最小的字体大小 -->
+        <attr format="dimension" name="minTextSize"/>
+        <attr format="float" name="precision"/>
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr format="boolean" name="sizeToFit"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_fill_color"/>
+        <attr format="color" name="civ_circle_background_color"/>
+    </declare-styleable>
+    <declare-styleable name="CircularProgressView">
+        <attr format="float" name="cpv_progress"/>
+        <attr format="float" name="cpv_maxProgress"/>
+        <attr format="integer" name="cpv_animDuration"/>
+        <attr format="integer" name="cpv_animSwoopDuration"/>
+        <attr format="integer" name="cpv_animSyncDuration"/>
+        <attr format="color" name="cpv_color"/>
+        <attr format="dimension" name="cpv_thickness"/>
+        <attr format="boolean" name="cpv_indeterminate"/>
+        <attr format="boolean" name="cpv_animAutostart"/>
+        <attr format="integer" name="cpv_animSteps"/>
+        <attr format="float" name="cpv_startAngle"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr format="dimension" name="horizontalSpacing"/>
+        <attr format="dimension" name="verticalSpacing"/>
+        <attr format="enum" name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr format="boolean" name="debugDraw"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr format="boolean" name="layout_newLine"/>
+        <attr format="dimension" name="layout_horizontalSpacing"/>
+        <attr format="dimension" name="layout_verticalSpacing"/>
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr format="dimension" name="dividerWidth"/>
+        <attr name="android:divider"/>
+        <attr name="android:requiresFadingEdge"/>
+        <attr name="android:fadingEdgeLength"/>
+    </declare-styleable>
+    <declare-styleable name="IconButton">
+        <attr format="dimension" name="iconPadding"/>
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr format="color" name="pstsIndicatorColor"/>
+        <attr format="color" name="pstsUnderlineColor"/>
+        <attr format="color" name="pstsDividerColor"/>
+        <attr format="dimension" name="pstsIndicatorHeight"/>
+        <attr format="dimension" name="pstsUnderlineHeight"/>
+        <attr format="dimension" name="pstsDividerPadding"/>
+        <attr format="dimension" name="pstsTabPaddingLeftRight"/>
+        <attr format="dimension" name="pstsScrollOffset"/>
+        <attr format="reference" name="pstsTabBackground"/>
+        <attr format="boolean" name="pstsShouldExpand"/>
+        <attr format="boolean" name="pstsTextAllCaps"/>
+    </declare-styleable>
+    <declare-styleable name="PowerImageView">
+        <attr format="boolean" name="auto_play"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr format="boolean" name="progressIndeterminate"/>
+        <attr format="color" name="barColor"/>
+        <attr format="color" name="rimColor"/>
+        <attr format="dimension" name="rimWidth"/>
+        <attr format="float" name="spinSpeed"/>
+        <attr format="integer" name="barSpinCycleTime"/>
+        <attr format="dimension" name="circleRadius"/>
+        <attr format="boolean" name="fillRadius"/>
+        <attr format="dimension" name="barWidth"/>
+    </declare-styleable>
+    <declare-styleable name="PullScrollView">
+        <attr format="reference" name="header"/>
+        <attr format="dimension" name="headerHeight"/>
+        <attr format="dimension" name="headerVisibleHeight"/>
+    </declare-styleable>
+    <declare-styleable name="PullToRefreshListView">
+        <attr name="android:dividerHeight"/>
+        <attr name="android:divider"/>
+    </declare-styleable>
+    <declare-styleable name="RippleView">
+        <attr format="color" name="rippleColor"/>
+        <attr format="float" name="alphaFactor"/>
+        <attr format="boolean" name="hover"/>
+    </declare-styleable>
+    <declare-styleable name="RotateTextView">
+        <attr format="integer" name="degree"/>
+    </declare-styleable>
+    <declare-styleable name="RoundAngleImageView">
+        <attr format="dimension" name="roundWidth"/>
+        <attr format="dimension" name="roundHeight"/>
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr format="dimension" name="border_thickness"/>
+        <attr format="color" name="border_inside_color"/>
+        <attr format="color" name="border_outside_color"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowLayout">
+        <attr format="dimension" name="sl_cornerRadius"/>
+        <attr format="dimension" name="sl_shadowRadius"/>
+        <attr format="color" name="sl_shadowColor"/>
+        <attr format="dimension" name="sl_dx"/>
+        <attr format="dimension" name="sl_dy"/>
+    </declare-styleable>
+    <declare-styleable name="SlideSwitch">
+        <attr format="color" name="themeColor"/>
+        <attr format="color" name="themeColorFalse"/>
+        <attr format="color" name="themeColorSpot"/>
+        <attr format="boolean" name="isOpen"/>
+        <attr name="shape">
+            <enum name="rect" value="1"/>
+            <enum name="circle" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+            <enum name="both" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TagCloudLayout">
+        <attr format="dimension" name="lineSpacing"/>
+        <attr format="dimension" name="tagSpacing"/>
+        <!-- 是否是固定布局 -->
+        <attr format="boolean" name="isFixed"/>
+        <attr format="integer" name="columnSize"/>
+    </declare-styleable>
+    <declare-styleable name="WaterDropView">
+        <attr format="dimension" name="max_circle_radius"/>
+        <attr format="dimension" name="min_circle_radius"/>
+        <attr format="color" name="waterdrop_color"/>
+        <attr format="dimension" name="topcircle_x"/>
+        <attr format="dimension" name="topcircle_y"/>
+        <attr format="dimension" name="bottomcircle_x"/>
+        <attr format="dimension" name="bottomcircle_y"/>
+    </declare-styleable>
+    <declare-styleable name="gridPasswordView">
+        <attr format="color|reference" name="gpvTextColor"/>
+        <attr format="dimension" name="gpvTextSize"/>
+        <attr format="color" name="gpvLineColor"/>
+        <attr format="color" name="gpvGridColor"/>
+        <attr format="dimension" name="gpvLineWidth"/>
+        <attr format="dimension" name="gpvCornerRadius"/>
+        <attr format="integer" name="gpvPasswordLength"/>
+        <attr format="string" name="gpvPasswordTransformation"/>
+        <attr format="enum" name="gpvPasswordType">
+            <enum name="numberPassword" value="0"/>
+            <enum name="textPassword" value="1"/>
+            <enum name="textVisiblePassword" value="2"/>
+            <enum name="textWebPassword" value="3"/>
+        </attr>
+    </declare-styleable>
+    <dimen name="common_margin">1dip</dimen>
+    <dimen name="common_margin_10">1dip</dimen>
+    <dimen name="cpv_default_thickness">4dp</dimen>
+    <dimen name="default_corner_radius">4dp</dimen>
+    <dimen name="default_shadow_radius">4dp</dimen>
+    <dimen name="tag_corner_radius">8dp</dimen>
+    <dimen name="tag_horizontal_spacing">5dip</dimen>
+    <dimen name="tag_vertical_spacing">5dip</dimen>
+    <integer name="cpv_default_anim_duration">4000</integer>
+    <integer name="cpv_default_anim_steps">3</integer>
+    <integer name="cpv_default_anim_swoop_duration">5000</integer>
+    <integer name="cpv_default_anim_sync_duration">500</integer>
+    <integer name="cpv_default_max_progress">100</integer>
+    <integer name="cpv_default_progress">0</integer>
+    <integer name="cpv_default_start_angle">-90</integer>
+    <string name="app_name">MyViewLib</string>
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="loading">正在加载...</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">Loading...</string>
+    <string name="xlistview_header_hint_normal">Pull-down refresh</string>
+    <string name="xlistview_header_hint_ready">Refresh data release</string>
+    <string name="xlistview_header_last_time">Next time：</string>
+    <style name="GridPasswordView"/>
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="LoadingDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="RushBuyCountDownTimerViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/bg_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_perching_workbench"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/main_tab_content">
+
+    <include layout="@layout/main_workbench_single_linkage" />
+
+    <include layout="@layout/main_bottom_tab" />
+</LinearLayout>
